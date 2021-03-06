@@ -59,7 +59,7 @@ const vcard = 'BEGIN:VCARD\n'
             + 'VERSION:1.0\n' 
             + 'FN:𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂 \n' // Nama kamu
             + '𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=5566992272931:+55 166992272931\n' //Nomor whatsapp kamu
+            + 'TEL;type=CELL;type=VOICE;waid=556692272931:+55 556692272931\n' //Nomor whatsapp kamu
             + 'END:VCARD'
 prefix = '/','.','!','*'
 blocked = []
@@ -300,11 +300,11 @@ async function starts() {
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["5566992272931@s.whatsapp.net"] // replace this with your number
-			const mod = [ownerNumber,"5566992272931@s.whatsapp.net"]//ubah nomor lo
-			const adminbotnumber = ["5566992272931@s.whatsapp.net"]//ubah nomor lo
-			const frendsowner = ["5566992272931@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["5566992272931@s.whatsapp.net","5531991562881@s.whatsapp.net","558183066760@s.whatsapp.net","5513997836050@s.whatsapp.net","5511951772253@s.whatsapp.net","5515997648722@s.whatsapp.net","5515991031151@s.whatsapp.net","5511956854099@s.whatsapp.net","553898702611@s.whatsapp.net","5511995407637@s.whatsapp.net","5512996815604@s.whatsapp.net","558587524845@s.whatsapp.net","558592810834@s.whatsapp.net","5518991151675@s.whatsapp.net","5521973783067@s.whatsapp.net","5519987196273@s.whatsapp.net","5521991219578@s.whatsapp.net","5519981985831@s.whatsapp.net","5519982508615@s.whatsapp.net","5519987526431@s.whatsapp.net","556796508311@s.whatsapp.net","558599875723@s.whatsapp.net","5511977323653@s.whatsapp.net"]
+			const ownerNumber = ["556692272931@s.whatsapp.net"] // replace this with your number
+			const mod = [ownerNumber,"556692272931@s.whatsapp.net"]//ubah nomor lo
+			const adminbotnumber = ["556692272931@s.whatsapp.net"]//ubah nomor lo
+			const frendsowner = ["556692272931@s.whatsapp.net"]//ubah nomor lo
+			const premium = ["556692272931@s.whatsapp.net","5511987529572@s.whatsapp.net","558183066760@s.whatsapp.net","5513997836050@s.whatsapp.net","5511951772253@s.whatsapp.net","5515997648722@s.whatsapp.net","5515991031151@s.whatsapp.net","5511956854099@s.whatsapp.net","553898702611@s.whatsapp.net","5511995407637@s.whatsapp.net","5512996815604@s.whatsapp.net","558587524845@s.whatsapp.net","558592810834@s.whatsapp.net","5518991151675@s.whatsapp.net","5521973783067@s.whatsapp.net","5519987196273@s.whatsapp.net","5521991219578@s.whatsapp.net","5519981985831@s.whatsapp.net","5519982508615@s.whatsapp.net","5519987526431@s.whatsapp.net","556796508311@s.whatsapp.net","558599875723@s.whatsapp.net","5511977323653@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -3261,7 +3261,7 @@ break
 					break
 					case 'ichiadmin':
 					tod = await getBuffer(`https://i.ibb.co/XDwBVDJ/1f2652c622fa.jpg`)
-					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMIN 𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣 - 𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂  🇧🇷* 」\n*│+ wa.me/5566992272931*╰──────*「 *𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂 * 」*────*\n\n*_SE QUER SER ADMIN DO BOT 𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣_*\n*_Tipo /iklan_*' })
+					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMIN 𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣 - 𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂  🇧🇷* 」\n*│+ wa.me/556692272931*╰──────*「 *𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂 * 」*────*\n\n*_SE QUER SER ADMIN DO BOT 𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣_*\n*_Tipo /iklan_*' })
 					break
 				case 'iklan':
 					client.sendMessage(from, iklan(prefix) , text, { quoted: mek })
@@ -3270,7 +3270,7 @@ break
                     if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					sa = await getBuffer(`https://i.ibb.co/PcQ6tsB/79ac87b9358c.jpg`)
-					client.sendMessage(from, sa, image, { quoted: mek, caption: '*╭────*「 *𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒 𝐏𝐑𝐄𝐌𝐈𝐔𝐌⚜️* 」\n*│+ wa.me/5566992272931/*╰──────*「 * 𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂 * 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DO 𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣_*\n*_Ketik #daftarvip*' })
+					client.sendMessage(from, sa, image, { quoted: mek, caption: '*╭────*「 *𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒 𝐏𝐑𝐄𝐌𝐈𝐔𝐌⚜️* 」\n*│+ wa.me/556692272931/*╰──────*「 * 𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂 * 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DO 𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣_*\n*_Ketik #daftarvip*' })
 					break
 					case 'cekmod': 
  
@@ -3452,7 +3452,7 @@ break
 				case 'dono':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/meZwqA5.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* 𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂 \n*YOUTUBE:* https://www.youtube.com/channel/UC5XgXdQO1_T9ChVLgVAiI3A\n*WPP:* wa.me/+5566992272931\n*INSTA:* sai\n\n\nEspero que tenham gostado do bot 🐊⚜️'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* 𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂 \n*YOUTUBE:* https://www.youtube.com/channel/UC5XgXdQO1_T9ChVLgVAiI3A\n*WPP:* wa.me/+556692272931\n*INSTA:* sai\n\n\nEspero que tenham gostado do bot 🐊⚜️'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return
