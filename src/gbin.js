@@ -2,7 +2,7 @@ const gbin = () => {
 	return `       
 *BINS:* 
 
-*𝗔𝗗𝗠 𝗩𝗜𝗖𝗧𝗢𝗥 𝗡𝗢 𝗖𝗢𝗠𝗔𝗡𝗗𝗢* 🐊🚩✈️
+*𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣 𝗡𝗢 𝗖𝗢𝗠𝗔𝗡𝗗𝗢* 🐊🚩✈️
 
 American Express,4867 427185 82182,3747,9869,$10228,3,2029,Harper Robinson,Southwell Road 8170,Zimbabwe
 American Express,4867 427185 28334,4676,6583,$6230,6,2023,Enrique Griffin,Dewar Street 7694,Slovenia

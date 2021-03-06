@@ -14,9 +14,9 @@ let { spawnSync } = require('child_process')
 let WAConnection = simple.WAConnection(_WAConnection)
 
 
-global.owner = ['5511987529572@s.whatsapp.net'] // Put your number here
-global.mods = ['5511987529572@s.whatsapp.net'] // Want some help?
-global.prems = ['5511987529572@s.whatsapp.net','5531991562881@s.whatsapp.net','558183066760@s.whatsapp.net','5513997836050@s.whatsapp.net','5511951772253@s.whatsapp.net','5515997648722@s.whatsapp.net','5515991031151@s.whatsapp.net','5511956854099@s.whatsapp.net','553898702611@s.whatsapp.net','5511995407637@s.whatsapp.net','5512996815604@s.whatsapp.net','558587524845@s.whatsapp.net','558592810834@s.whatsapp.net','5518991151675@s.whatsapp.net','5521973783067@s.whatsapp.net','5519987196273@s.whatsapp.net','5521991219578@s.whatsapp.net','5519981985831@s.whatsapp.net','5519982508615@s.whatsapp.net','5519987526431@s.whatsapp.net','556796508311@s.whatsapp.net','558599875723@s.whatsapp.net','5511977323653@s.whatsapp.net'] // Premium user has unlimited limit
+global.owner = ['5511987529572@s.whatsapp.net','5566992272931@s.whatsapp.net'] // Put your number here
+global.mods = ['5511987529572@s.whatsapp.net','5566992272931@s.whatsapp.net'] // Want some help?
+global.prems = ['5511987529572@s.whatsapp.net','5566992272931@s.whatsapp.net','558183066760@s.whatsapp.net','5513997836050@s.whatsapp.net','5511951772253@s.whatsapp.net','5515997648722@s.whatsapp.net','5515991031151@s.whatsapp.net','5511956854099@s.whatsapp.net','553898702611@s.whatsapp.net','5511995407637@s.whatsapp.net','5512996815604@s.whatsapp.net','558587524845@s.whatsapp.net','558592810834@s.whatsapp.net','5518991151675@s.whatsapp.net','5521973783067@s.whatsapp.net','5519987196273@s.whatsapp.net','5521991219578@s.whatsapp.net','5519981985831@s.whatsapp.net','5519982508615@s.whatsapp.net','5519987526431@s.whatsapp.net','556796508311@s.whatsapp.net','558599875723@s.whatsapp.net','5511977323653@s.whatsapp.net'] // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
   nrtm: 'https://nurutomo.herokuapp.com',

@@ -52,19 +52,19 @@ const { limit } = require('./database/menu/limit*/
 const apivhtear = 'apivhtear';
 const apibarbar = 'apibarbar';
 const tobzkey = 'apitobz';
-const BotName = '𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡'; 
-const instagram = 'https://www.instagram.com/gamerlagado/'; 
+const BotName = '𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣'; 
+const instagram = 'tem não'; 
 const aktif = '08:00 - 22:00';
 const vcard = 'BEGIN:VCARD\n'
-            + 'VERSION:3.0\n' 
-            + 'FN:𝓐𝓓𝓜 𝓥𝓘𝓒𝓣𝓞𝓡\n' // Nama kamu
-            + '𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡;\n' // Nama bot
-            + 'TEL;type=CELL;type=VOICE;waid=5511987529572:+55 11987529572\n' //Nomor whatsapp kamu
+            + 'VERSION:1.0\n' 
+            + 'FN:𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂 \n' // Nama kamu
+            + '𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣;\n' // Nama bot
+            + 'TEL;type=CELL;type=VOICE;waid=5566992272931:+55 166992272931\n' //Nomor whatsapp kamu
             + 'END:VCARD'
-prefix = '#','!','.','*'
+prefix = '/','.','!','*'
 blocked = []
 limitawal = '999999999'
-cr = '*𝓐𝓓𝓜 𝓥𝓘𝓒𝓣𝓞𝓡*'
+cr = '*𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂 *'
 
 /*********** LOAD FILE ***********/
 const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
@@ -224,7 +224,7 @@ async function starts() {
 				} catch {
 					ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 				}
-				teks = `Olá @${num.split('@')[0]}\n*BEM VINDO(A) AO GRUPO* *${mdata.subject}*\n\n*EU SOU O VICTOR, BOT DO GRUPO*\n_Regras na descrição_🤝🏻 \n*NÃO SEJA UM GHOST*\n\n\n`
+				teks = `Olá @${num.split('@')[0]}\n*BEM VINDO(A) AO GRUPO* *${mdata.subject}*\n\n*EU SOU O 𝓗𝓲𝓴𝓪𝓻𝔂 , BOT DO GRUPO*\n_Regras na descrição_🤝🏻 \n*NÃO SEJA UM GHOST*\n\n\n`
 				let buff = await getBuffer(ppimg)
 				client.sendMessage(mdata.id, buff, MessageType.image, {caption: teks, contextInfo: {"mentionedJid": [num]}})
 				client.sendMessage(from, tujuh, MessageType.audio, {quoted: mek, mimetype: 'audio/mp4', ptt:true})
@@ -289,22 +289,22 @@ async function starts() {
 				only: {
 					group: '[❗] Este comando só pode ser usado em grupos! ❌',
 					premium: '[❗] ESTE PEDIDO É SO PARA *USUÁRIOS PREMIUMS*',
-					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD BOT VICTOR*',
+					mod: '[❗] ESTE PEDIDO É ESPECÍFICO PARA USUARIO MOD BOT 𝓗𝓲𝓴𝓪𝓻𝔂 *',
 					benned: 'Você foi banido, por favor, contate o proprietário para saber mais',
-					ownerG: '[❗] ADM VICTOR? Este é um recurso especial para o ADM VICTOR ❌',
-					ownerB: '[❗] ADM VICTOR? Este é um recurso especial para o ADM VICTOR ❌',
-					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de ADM VICTOR. Registre-se para fazer amizade com o bot ADM VICTOR por meio, \n\nCommand : ${prefix}daftar nome|idade\nExemplo : ${prefix}daftar VICTOR|15\n\n──「 𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡 」──`,
+					ownerG: '[❗] 𝓗𝓲𝓴𝓪𝓻𝔂 ? Este é um recurso especial para o 𝓗𝓲𝓴𝓪𝓻𝔂  ❌',
+					ownerB: '[❗] 𝓗𝓲𝓴𝓪𝓻𝔂 ? Este é um recurso especial para o 𝓗𝓲𝓴𝓪𝓻𝔂  ❌',
+					userB: `──「 LISTA 」──\nOlá Kak !\nDesculpe, irmã. Você não está registrado como amigo de 𝓗𝓲𝓴𝓪𝓻𝔂 . Registre-se para fazer amizade com o bot 𝓗𝓲𝓴𝓪𝓻𝔂  por meio, \n\nCommand : ${prefix}daftar nome|idade\nExemplo : ${prefix}daftar 𝓗𝓲𝓴𝓪𝓻𝔂 |15\n\n──「 𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣 」──`,
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: ' [❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
 				}
 			}
 
 			const botNumber = client.user.jid
-			const ownerNumber = ["5511987529572@s.whatsapp.net"] // replace this with your number
-			const mod = [ownerNumber,"5511987529572@s.whatsapp.net"]//ubah nomor lo
-			const adminbotnumber = ["5511987529572@s.whatsapp.net"]//ubah nomor lo
-			const frendsowner = ["5511987529572@s.whatsapp.net"]//ubah nomor lo
-			const premium = ["5511987529572@s.whatsapp.net","5531991562881@s.whatsapp.net","558183066760@s.whatsapp.net","5513997836050@s.whatsapp.net","5511951772253@s.whatsapp.net","5515997648722@s.whatsapp.net","5515991031151@s.whatsapp.net","5511956854099@s.whatsapp.net","553898702611@s.whatsapp.net","5511995407637@s.whatsapp.net","5512996815604@s.whatsapp.net","558587524845@s.whatsapp.net","558592810834@s.whatsapp.net","5518991151675@s.whatsapp.net","5521973783067@s.whatsapp.net","5519987196273@s.whatsapp.net","5521991219578@s.whatsapp.net","5519981985831@s.whatsapp.net","5519982508615@s.whatsapp.net","5519987526431@s.whatsapp.net","556796508311@s.whatsapp.net","558599875723@s.whatsapp.net","5511977323653@s.whatsapp.net"]
+			const ownerNumber = ["5566992272931@s.whatsapp.net"] // replace this with your number
+			const mod = [ownerNumber,"5566992272931@s.whatsapp.net"]//ubah nomor lo
+			const adminbotnumber = ["5566992272931@s.whatsapp.net"]//ubah nomor lo
+			const frendsowner = ["5566992272931@s.whatsapp.net"]//ubah nomor lo
+			const premium = ["5566992272931@s.whatsapp.net","5531991562881@s.whatsapp.net","558183066760@s.whatsapp.net","5513997836050@s.whatsapp.net","5511951772253@s.whatsapp.net","5515997648722@s.whatsapp.net","5515991031151@s.whatsapp.net","5511956854099@s.whatsapp.net","553898702611@s.whatsapp.net","5511995407637@s.whatsapp.net","5512996815604@s.whatsapp.net","558587524845@s.whatsapp.net","558592810834@s.whatsapp.net","5518991151675@s.whatsapp.net","5521973783067@s.whatsapp.net","5519987196273@s.whatsapp.net","5521991219578@s.whatsapp.net","5519981985831@s.whatsapp.net","5519982508615@s.whatsapp.net","5519987526431@s.whatsapp.net","556796508311@s.whatsapp.net","558599875723@s.whatsapp.net","5511977323653@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const sender = isGroup ? mek.participant : mek.key.remoteJid
 			const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
@@ -364,7 +364,7 @@ async function starts() {
 if (text.includes("ip"))
   { const aris = text.replace(/!ip /, "") 
   axios.get(`https://mnazria.herokuapp.com/api/check?ip=${aris}`).then((res) =>{ 
-  let hasil = ` *🔍CONSULTA REALIZADA🔍* \n\n ➸ *CIDADE:*  ${res.data.city}\n ➸ *Latitude* : ${res.data.latitude}\n ➸ *Longtitude* : ${res.data.longitude}\n ➸ *REGIÃO* : ${res.data.region_name}\n ➸ *UF* : ${res.data.region_code}\n ➸ *IP* : ${res.data.ip}\n ➸ *TIPO* : ${res.data.type}\n ➸ *CEP* : ${res.data.zip}\n ➸ *LOCALIDADE* : ${res.data.location.geoname_id}\n ➸ *CAPITAL* : ${res.data.location.capital}\n ➸ *DDD* : ${res.data.location.calling_code}\n ➸ *PAÍS* : ${res.data.location.country_flag_emoji}\n *📌BY:𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡*` 
+  let hasil = ` *🔍CONSULTA REALIZADA🔍* \n\n ➸ *CIDADE:*  ${res.data.city}\n ➸ *Latitude* : ${res.data.latitude}\n ➸ *Longtitude* : ${res.data.longitude}\n ➸ *REGIÃO* : ${res.data.region_name}\n ➸ *UF* : ${res.data.region_code}\n ➸ *IP* : ${res.data.ip}\n ➸ *TIPO* : ${res.data.type}\n ➸ *CEP* : ${res.data.zip}\n ➸ *LOCALIDADE* : ${res.data.location.geoname_id}\n ➸ *CAPITAL* : ${res.data.location.capital}\n ➸ *DDD* : ${res.data.location.calling_code}\n ➸ *PAÍS* : ${res.data.location.country_flag_emoji}\n *📌BY:𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣*` 
   conn.sendMessage(id, hasil, MessageType.text); 
  })
  }
@@ -385,7 +385,7 @@ if (text.includes("cnpj")){
 const aris = text.replace(/!cnpj /, "")
 axios.get(`https://www.receitaws.com.br/v1/cnpj/${aris}`).then((res) => {
 	conn.sendMessage(id, '[❗] ESPERE ESTOU BUSCANDO DADOS', MessageType.text)
-         let cep = `*🔍CONSULTA REALIZADA🔍* \n\n ➸ *ATIVIDADE PRINCIPAL:* ${res.data.atividade_principal[0].text} \n\n ➸ *DATA SITUAÇÃO:* ${res.data.data_situacao}\n\n ➸ *TIPO:* ${res.data.tipo} \n\n ➸ *NOME:* ${res.data.nome} \n\n ➸ *UF:* ${res.data.uf} \n\n ➸ *TELEFONE:* ${res.data.telefone}\n\n ➸ *SITUAÇÃO:* ${res.data.situacao} \n\n ➸ *BAIRRO:* ${res.data.bairro} \n\n ➸ *RUA:* ${res.data.logradouro} \n\n ➸ *NÚMERO :* ${res.data.numero} \n\n ➸ *CEP :* ${res.data.cep} \n\n ➸ *MUNICÍPIO:* ${res.data.municipio} \n\n ➸ *PORTE:* ${res.data.porte}\n\n ➸ *ABERTURA:* ${res.data.abertura}\n\n ➸ *NATUREZA JURÍDICA:* ${res.data.natureza_juridica} \n\n ➸ *FANTASIA:* ${res.data.fantasia}\n\n ➸ *CNPJ:* ${res.data.cnpj}\n\n ➸ *ÚLTIMA ATUALIZAÇÃO:* ${res.data.ultima_atualizacao}\n\n ➸ *STATUS:* ${res.data.status}\n\n ➸ *COMPLEMENTO:* ${res.data.complemento}\n\n ➸ *EMAIL:* ${res.data.email}\n\n *📌BY:𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡* `;
+         let cep = `*🔍CONSULTA REALIZADA🔍* \n\n ➸ *ATIVIDADE PRINCIPAL:* ${res.data.atividade_principal[0].text} \n\n ➸ *DATA SITUAÇÃO:* ${res.data.data_situacao}\n\n ➸ *TIPO:* ${res.data.tipo} \n\n ➸ *NOME:* ${res.data.nome} \n\n ➸ *UF:* ${res.data.uf} \n\n ➸ *TELEFONE:* ${res.data.telefone}\n\n ➸ *SITUAÇÃO:* ${res.data.situacao} \n\n ➸ *BAIRRO:* ${res.data.bairro} \n\n ➸ *RUA:* ${res.data.logradouro} \n\n ➸ *NÚMERO :* ${res.data.numero} \n\n ➸ *CEP :* ${res.data.cep} \n\n ➸ *MUNICÍPIO:* ${res.data.municipio} \n\n ➸ *PORTE:* ${res.data.porte}\n\n ➸ *ABERTURA:* ${res.data.abertura}\n\n ➸ *NATUREZA JURÍDICA:* ${res.data.natureza_juridica} \n\n ➸ *FANTASIA:* ${res.data.fantasia}\n\n ➸ *CNPJ:* ${res.data.cnpj}\n\n ➸ *ÚLTIMA ATUALIZAÇÃO:* ${res.data.ultima_atualizacao}\n\n ➸ *STATUS:* ${res.data.status}\n\n ➸ *COMPLEMENTO:* ${res.data.complemento}\n\n ➸ *EMAIL:* ${res.data.email}\n\n *📌BY:𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣* `;
     conn.sendMessage(id, cep ,MessageType.text);
 }) 
 }
@@ -394,7 +394,7 @@ if (text.includes("cpf")){
 const aris = text.replace(/!cpf /, "")
 axios.get(`http://geradorapp.com/api/v1/cpf/generate?token=${aris}`).then((res) => {
 	conn.sendMessage(id, '[❗] ESPERE ESTOU BUSCANDO DADOS', MessageType.text)
-         let ecpf = `*🔍CONSULTA REALIZADA🔍* \n\n ➸ *CPF:* ${res.data.CPF} \n\n ➸ *NOME:* ${res.data.Nome}\n\n ➸ *MÃE:* ${res.data.NomeMae} \n\n ➸ *NASCIMENTO:* ${res.data.DataNascimento} \n\n ➸ *RUA:* ${res.data.Rua} \n\n ➸ *N°:* ${res.data.NumeroRua}\n\n ➸ *COMPLEMENTO:* ${res.data.Complemento}\n\n ➸ *BAIRRO:* ${res.data.Bairro}\n\n ➸ *CEP:* ${res.data.CEP}\n\n ➸ *UF:* ${res.data.EstadoSigla}\n\n ➸ *CIDADE:* ${res.data.Cidade}\n\n ➸ *ESTADO:* ${res.data.Estado}\n\n ➸ *PAIS:* ${res.data.Pais}  \n\n *📌BY:𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡* `;
+         let ecpf = `*🔍CONSULTA REALIZADA🔍* \n\n ➸ *CPF:* ${res.data.CPF} \n\n ➸ *NOME:* ${res.data.Nome}\n\n ➸ *MÃE:* ${res.data.NomeMae} \n\n ➸ *NASCIMENTO:* ${res.data.DataNascimento} \n\n ➸ *RUA:* ${res.data.Rua} \n\n ➸ *N°:* ${res.data.NumeroRua}\n\n ➸ *COMPLEMENTO:* ${res.data.Complemento}\n\n ➸ *BAIRRO:* ${res.data.Bairro}\n\n ➸ *CEP:* ${res.data.CEP}\n\n ➸ *UF:* ${res.data.EstadoSigla}\n\n ➸ *CIDADE:* ${res.data.Cidade}\n\n ➸ *ESTADO:* ${res.data.Estado}\n\n ➸ *PAIS:* ${res.data.Pais}  \n\n *📌BY:𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣* `;
     conn.sendMessage(id, ecpf ,MessageType.text);
 }) 
 }
@@ -403,7 +403,7 @@ if (text.includes("geradorcpf")){
 const aris = text.replace(/!geradorcpf/, "")
 axios.get(`http://geradorapp.com/api/v1/cpf/generate?token=40849779ec68f8351995def08ff1e2fa`).then((res) => {
 	conn.sendMessage(id, '[❗] ESPERE ESTA PROCESSANDO', MessageType.text)
-         let cpf = `*🔍CPF GERADOS🔍* \n\n ➸ *CPF:* ${res.data.data.number}  \n\n *📌BY:𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡*`;
+         let cpf = `*🔍CPF GERADOS🔍* \n\n ➸ *CPF:* ${res.data.data.number}  \n\n *📌BY:𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣*`;
     conn.sendMessage(id, cpf ,MessageType.text);
 })
 }	
@@ -412,7 +412,7 @@ if (text.includes("cep")){
 const aris = text.replace(/!cep /, "")
 axios.get(`https://viacep.com.br/ws/${aris}/json/`).then((res) => {
 	conn.sendMessage(id, '[❗] ESPERE ESTOU BUSCANDO DADOS', MessageType.text)
-         let cep = `*🔍CONSULTA REALIZADA🔍* \n\n ➸ *CEP:* ${res.data.cep} \n\n ➸ *ENDEREÇO:* ${res.data.logradouro}\n\n ➸ *COMPLEMENTO:* ${res.data.complemento} \n\n ➸ *BAIRRO:* ${res.data.bairro} \n\n ➸ *LOCALIDADE:* ${res.data.localidade} \n\n ➸ *UF:* ${res.data.uf}\n\n ➸ *DDD:* ${res.data.ddd} \n\n *📌BY:𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡* `;
+         let cep = `*🔍CONSULTA REALIZADA🔍* \n\n ➸ *CEP:* ${res.data.cep} \n\n ➸ *ENDEREÇO:* ${res.data.logradouro}\n\n ➸ *COMPLEMENTO:* ${res.data.complemento} \n\n ➸ *BAIRRO:* ${res.data.bairro} \n\n ➸ *LOCALIDADE:* ${res.data.localidade} \n\n ➸ *UF:* ${res.data.uf}\n\n ➸ *DDD:* ${res.data.ddd} \n\n *📌BY:𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣* `;
     conn.sendMessage(id, cep ,MessageType.text);
 }) 
 }
@@ -421,7 +421,7 @@ axios.get(`https://viacep.com.br/ws/${aris}/json/`).then((res) => {
 if (text.includes("placa"))
   { const aris = text.replace(/!placa /, "") 
   axios.get(`https://apicarros.com/v1/consulta/${aris}/json`).then((res) =>{ 
-  let hasil = ` *🔍CONSULTA REALIZADA🔍* \n\n ➸ *ANO:*  ${res.data.ano}\n ➸ *ANO MODELO* : ${res.data.anoModelo}\n ➸ *CHASSI* : ${res.data.chassi}\n ➸ *CODIGO RETORNO* : ${res.data.codigoRetorno}\n ➸ *CODIGO SITUACAO* : ${res.data.codigoSituacao}\n ➸ *COR* : ${res.data.cor}\n ➸ *MARCA* : ${res.data.marca}\n ➸ *MUNICIPIO* : ${res.data.municipio}\n ➸ *SITUACAO* : ${res.data.situacao}\n ➸ *UF* : ${res.data.uf}\n *📌BY:𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡*` 
+  let hasil = ` *🔍CONSULTA REALIZADA🔍* \n\n ➸ *ANO:*  ${res.data.ano}\n ➸ *ANO MODELO* : ${res.data.anoModelo}\n ➸ *CHASSI* : ${res.data.chassi}\n ➸ *CODIGO RETORNO* : ${res.data.codigoRetorno}\n ➸ *CODIGO SITUACAO* : ${res.data.codigoSituacao}\n ➸ *COR* : ${res.data.cor}\n ➸ *MARCA* : ${res.data.marca}\n ➸ *MUNICIPIO* : ${res.data.municipio}\n ➸ *SITUACAO* : ${res.data.situacao}\n ➸ *UF* : ${res.data.uf}\n *📌BY:𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣*` 
   conn.sendMessage(id, hasil, MessageType.text); 
  })
  }		        
@@ -1421,7 +1421,7 @@ if (text.includes("placa"))
 					for (let V of premium) {
 						teks += `│+  @${V.split('@')[0]}\n`
 					}
-					teks += `│+ Total : ${premium.length}\n╰──────*「 *𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡* 」*────`
+					teks += `│+ Total : ${premium.length}\n╰──────*「 *𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣* 」*────`
 					client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": premium}})
 					break
                   case 'qrcode':
@@ -1435,7 +1435,7 @@ if (text.includes("placa"))
 		        case 'wame':
                   client.updatePresence(from, Presence.composing) 
                   options = {
-                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*ADM VICTOR NO CONTROLE🐊🚩*`,
+                  text: `「 *LINK WHATSAPP* 」\n\n_Solicitado por_ : *@${sender.split("@s.whatsapp.net")[0]}*\n\nSeu link WhatsApp:\n\n*https://wa.me/${sender.split("@s.whatsapp.net")[0]}*\n\n*Ou*\n\n*https://api.whatsapp.com/send?phone=${sender.split("@")[0]}*\n\n*𝓗𝓲𝓴𝓪𝓻𝔂  NO CONTROLE🐊🚩*`,
                   contextInfo: { mentionedJid: [sender] }
                   }
                   client.sendMessage(from, options, text, { quoted: mek } )
@@ -1489,7 +1489,7 @@ if (text.includes("placa"))
                 break
 				case 'daftar':
 					client.updatePresence(from, Presence.composing)
-					if (args.length < 1) return reply(`Parâmetros Incorretos\nCommand : ${prefix}daftar nome|idade\nContoh : ${prefix}daftar victor|23`)
+					if (args.length < 1) return reply(`Parâmetros Incorretos\nCommand : ${prefix}daftar nome|idade\nContoh : ${prefix}daftar 𝓗𝓲𝓴𝓪𝓻𝔂 |23`)
 					var reg = body.slice(8)
 					var jeneng = reg.split("|")[0];
 					var umure = reg.split("|")[1];
@@ -2340,13 +2340,13 @@ break
                    break
 					case 'totaluser':
 					if (!isOwner) return reply(mess.only.ownerB)    
-					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOS 𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡 🐊* 」\n\`\`\``
+					teks = `\`\`\`╭────*「 *TOTAL DE USUÁRIOS 𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣 🐊* 」\n\`\`\``
 					no = 0
 					for (let hehehe of user) {
 						no += 1
 						teks += `\`\`\`[${no.toString()}]\`\`\` @${hehehe.split('@')[0]}\n`
 					}
-					teks += `│+ Total de usuários : ${user.length}\n╰──────*「 *𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡* 」*────`
+					teks += `│+ Total de usuários : ${user.length}\n╰──────*「 *𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣* 」*────`
 					 client.sendMessage(from, teks.trim(), extendedText, {quoted: mek, contextInfo: {"mentionedJid": user}})
 					break
 				case 'desligar':
@@ -2480,7 +2480,7 @@ break
 					await limitAdd(sender) 
 					break 
 					
-// recursos anime, random @ADM VICTOR domina irmão
+// recursos anime, random @𝓗𝓲𝓴𝓪𝓻𝔂  domina irmão
 
                 case 'anjing':
                    if (!isGroup) return reply(ind.groupo())
@@ -2957,7 +2957,7 @@ break
 					client.sendMessage(from, buf, image, {quoted: mek, caption: teks})
 					break
 			    case 'owner':
-                    client.sendMessage(from, {displayname: "ADM VICTOR", vcard: vcard}, MessageType.contact, { quoted: mek})
+                    client.sendMessage(from, {displayname: "𝓗𝓲𝓴𝓪𝓻𝔂 ", vcard: vcard}, MessageType.contact, { quoted: mek})
                     client.sendMessage(from, 'Ctt do meu dono ai, pfv n flode o chat',MessageType.text, { quoted: mek} )
                     break
                 case 'fitnah':	
@@ -3195,7 +3195,7 @@ break
 					}
 					break
 					case 'dado':    
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o ADM VICTOR ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
+					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o 𝓗𝓲𝓴𝓪𝓻𝔂  ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
 					
 					kapankah = body.slice(1)
 					const elu =['1','2','3','4','5','6']
@@ -3204,7 +3204,7 @@ break
 					break
 					case 'addvip':  
 					if (!isOwner) return reply(mess.only.ownerB)
-					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o ADM VICTOR ou digite * # Daftarvip * para adquirir o acesso Premium!' ,text, { quoted: mek })
+					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o 𝓗𝓲𝓴𝓪𝓻𝔂  ou digite * # Daftarvip * para adquirir o acesso Premium!' ,text, { quoted: mek })
 					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('A marca-alvo que você quer chutar!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
@@ -3239,7 +3239,7 @@ break
 					if (!isPremium) return reply('Você não é um Membro Premium, entre em contato com o proprietário ou digite *.Daftarvip* para adquirir o acesso Premium!' ,text, { quoted: mek })
 					me = client.user
 					uptime = process.uptime()
-					client.sendMessage(from,  `*──────────────────*\n*Nome do bot:* 𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡\n*─────────────────*\n『 *𝐕𝐈𝐏 𝐔𝐒𝐄𝐑*』\n*──────────────────*\n*•Número:* *${sender.split("@s.whatsapp.net")[0]}*\n*•Status:* *ATIVO*\n*──────────────────*\n*Status Bot:* *${kyun(uptime)}*\n\n*VOCE É UM MEMBRO PREMIUM* ⚜️\n*──────────────────*` , text, { quoted: mek, })
+					client.sendMessage(from,  `*──────────────────*\n*Nome do bot:* 𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣\n*─────────────────*\n『 *𝐕𝐈𝐏 𝐔𝐒𝐄𝐑*』\n*──────────────────*\n*•Número:* *${sender.split("@s.whatsapp.net")[0]}*\n*•Status:* *ATIVO*\n*──────────────────*\n*Status Bot:* *${kyun(uptime)}*\n\n*VOCE É UM MEMBRO PREMIUM* ⚜️\n*──────────────────*` , text, { quoted: mek, })
 					break
 					case 'dellvip':
 					if (!isOwner) return reply(mess.only.ownerB)
@@ -3261,7 +3261,7 @@ break
 					break
 					case 'ichiadmin':
 					tod = await getBuffer(`https://i.ibb.co/XDwBVDJ/1f2652c622fa.jpg`)
-					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMIN 𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡 - 𝓐𝓓𝓜 𝓥𝓘𝓒𝓣𝓞𝓡 🇧🇷* 」\n*│+ wa.me/5511987529572*╰──────*「 *𝓐𝓓𝓜 𝓥𝓘𝓒𝓣𝓞𝓡* 」*────*\n\n*_SE QUER SER ADMIN DO BOT 𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡_*\n*_Tipo /iklan_*' })
+					client.sendMessage(from, tod, image, { quoted: mek, caption: '*╭────*「 *ADMIN 𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣 - 𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂  🇧🇷* 」\n*│+ wa.me/5566992272931*╰──────*「 *𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂 * 」*────*\n\n*_SE QUER SER ADMIN DO BOT 𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣_*\n*_Tipo /iklan_*' })
 					break
 				case 'iklan':
 					client.sendMessage(from, iklan(prefix) , text, { quoted: mek })
@@ -3270,7 +3270,7 @@ break
                     if (isBanned) return reply(mess.only.benned)    
 				if (!isUser) return reply(mess.only.userB)
 					sa = await getBuffer(`https://i.ibb.co/PcQ6tsB/79ac87b9358c.jpg`)
-					client.sendMessage(from, sa, image, { quoted: mek, caption: '*╭────*「 *𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒 𝐏𝐑𝐄𝐌𝐈𝐔𝐌⚜️* 」\n*│+ wa.me/5511987529572/*╰──────*「 * 𝓐𝓓𝓜 𝓥𝓘𝓒𝓣𝓞𝓡* 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DO 𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡_*\n*_Ketik #daftarvip*' })
+					client.sendMessage(from, sa, image, { quoted: mek, caption: '*╭────*「 *𝐔𝐒𝐔𝐀𝐑𝐈𝐎𝐒 𝐏𝐑𝐄𝐌𝐈𝐔𝐌⚜️* 」\n*│+ wa.me/5566992272931/*╰──────*「 * 𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂 * 」*────*\n\n*_SE QUER SER UM USUÁRIO PREMIUM DO 𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣_*\n*_Ketik #daftarvip*' })
 					break
 					case 'cekmod': 
  
@@ -3338,7 +3338,7 @@ break
 				case 'bot':
 			     	memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/dPUVFF6.png`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*Comandos basicos para bot:*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*ADM VICTOR NO CONTROLE*'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*Comandos basicos para bot:*\n\n*pkg upgrade && pkg update*\n*pkg install git*\n*git clone (link da git)*\n*cd (repositório)*\n*bash install.sh*\n*npm start*\n\n*𝓗𝓲𝓴𝓪𝓻𝔂  NO CONTROLE*'})
 					break
 				case 'belle3':
 					memein = await kagApi.memeindo()
@@ -3401,7 +3401,7 @@ break
 				case 'canal':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/meZwqA5.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do 𝓐𝓓𝓜 𝓥𝓘𝓒𝓣𝓞𝓡:*\n\n https://www.youtube.com/channel/UC5XgXdQO1_T9ChVLgVAiI3A'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '️*canal do 𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂 :*\n\n tem não'})
 					break
 				case 'nsfwloli1':
 					memein = await kagApi.memeindo()
@@ -3452,7 +3452,7 @@ break
 				case 'dono':
 					memein = await kagApi.memeindo()
 					buffer = await getBuffer(`https://i.imgur.com/meZwqA5.jpg`)
-					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* 𝓐𝓓𝓜 𝓥𝓘𝓒𝓣𝓞𝓡\n*YOUTUBE:* https://www.youtube.com/channel/UC5XgXdQO1_T9ChVLgVAiI3A\n*WPP:* wa.me/+5511987529572\n*INSTA:* sai\n\n\nEspero que tenham gostado do bot 🐊⚜️'})
+					client.sendMessage(from, buffer, image, {quoted: mek, caption: '*CRIADOR:* 𝓐𝓓𝓜 𝓗𝓲𝓴𝓪𝓻𝔂 \n*YOUTUBE:* https://www.youtube.com/channel/UC5XgXdQO1_T9ChVLgVAiI3A\n*WPP:* wa.me/+5566992272931\n*INSTA:* sai\n\n\nEspero que tenham gostado do bot 🐊⚜️'})
 					break
 				case 'setprefix':
 					if (args.length < 1) return

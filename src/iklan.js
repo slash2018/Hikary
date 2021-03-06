@@ -10,9 +10,9 @@ const iklan = () => {
 ╠➥ *PIX E TRANSFERENCIA,*
 ╠═══════════════════════════
 ╠➥ *VANTAGENS*
-╠➥ *wa.me/+5511987529572*
+╠➥ *wa.me/+5566992272931*
 ║
-╚═〘  𝓐𝓓𝓜 𝓥𝓘𝓒𝓣𝓞𝓡  〙
+╚═〘  𝓗𝓲𝓴𝓪𝓻𝔂  〙
 `
 }
 exports.iklan = iklan

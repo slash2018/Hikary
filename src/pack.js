@@ -3,7 +3,7 @@ const pack = (prefix) => {
  
       *PACKS:*
     
-*𝓥𝓘𝓒𝓣𝓞𝓡 𝓝𝓞 𝓒𝓞𝓜𝓐𝓝𝓓𝓞 ⚜️🐊*
+*𝓗𝓲𝓴𝓪𝓻𝔂 𝓝𝓞 𝓒𝓞𝓜𝓐𝓝𝓓𝓞 ⚜️🐊*
 
 Belle delphine : https://photos.app.goo.gl/Jr4Qk1dFSJepPdRc7 
 

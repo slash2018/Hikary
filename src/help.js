@@ -2,10 +2,10 @@ const help = (prefix) => {
 	return `
 ╔══✪〘 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐂𝐎𝐄𝐒〙✪══
 ║
-╠ *𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡* 
+╠ *𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣* 
 ╠😎 *3.0*
-╠😎 𝐃𝐎𝐍𝐎: 𝗩𝗜𝗖𝗧𝗢𝗥 
-╠😎 *wa.me/+5511987529572*
+╠😎 𝐃𝐎𝐍𝐎: 𝓗𝓲𝓴𝓪𝓻𝔂  
+╠😎 *wa.me/+5566992272931*
 ╠😎 𝐒𝐓𝐀𝐓𝐔𝐒: ON
 ║
 ╠══✪〘 𝐍𝐎𝐕𝐎𝐒 〙✪══
@@ -220,19 +220,16 @@ const help = (prefix) => {
 ║🐊 *dbz*
 ║🐊 *mandememe*
 ║
-╠══✪〘 𝓥𝓘𝓒𝓣𝓞𝓡 𝓝𝓞 𝓒𝓞𝓜𝓐𝓝𝓓𝓞 〙✪══
+╠══✪〘 𝓗𝓲𝓴𝓪𝓻𝔂 𝓝𝓞 𝓒𝓞𝓜𝓐𝓝𝓓𝓞 〙✪══
 ║
-║ *NOME: 𝓐𝓓𝓜 𝓥𝓘𝓒𝓣𝓞𝓡*
-║ *INSTA: https://www.instagram.com/gamerlagado/*
-║ *WPP: wa.me/+55119875295727*
-║ *YOUTUBE: https://www.youtube.com/channel/UC5XgXdQO1_T9ChVLgVAiI3A*
-║ *𝐒𝐇𝐈𝐓𝐏𝐎𝐒𝐓 𝐄𝐋𝐈𝐓𝐄⚜️: https://chat.whatsapp.com/Eedio1m9BcO6YpY8vDE2p7
+║ *NOME: 𝓗𝓲𝓴𝓪𝓻𝔂*
+║ *WPP: wa.me/+55669922729317*
 ║  
 ║  *"CRINGE MORRE CEDO 🐊👑*
 ║  
 ║
 ║
-╚═〘 𝓑𝓞𝓣 𝓥𝓘𝓒𝓣𝓞𝓡 〙`
+╚═〘 𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣 〙`
 }
 
 exports.help = help

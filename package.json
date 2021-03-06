@@ -1,6 +1,6 @@
 {
-  "name": "botvictor",
-  "version": "3.0.0",
+  "name": "hikarybot",
+  "version": "1.0.0",
   "description": "No comment",
   "main": "index.js",
   "directories": {
@@ -41,10 +41,10 @@
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/slash2018/botvictor3"
+    "url": "git+https://github.com/slash2018/Hikary"
   },
   "bugs": {
-    "url": "https://github.com/slash2018/botvictor3/issues"
+    "url": "https://github.com/slash2018/Hikary/issues"
   },
   "homepage": "https://github.com/mhankbarbar/termux-wabot#readme"
 }
