@@ -149,7 +149,7 @@ https://realsht.mobi/iJQbj
 • 100 Font Picsay/Pixelab
 https://realsht.mobi/hrTdE
 
-𝓗𝓲𝓴𝓪𝓻𝔂  𝓝𝓞 𝓒𝓞𝓜𝓐𝓝𝓓𝓞 ⚜️🐊
+Simih No Comando ⚜️🐊
 `
 }
 exports.modapk = modapk

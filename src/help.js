@@ -2,9 +2,9 @@ const help = (prefix) => {
 	return `
 ╔══✪〘 𝐈𝐍𝐅𝐎𝐑𝐌𝐀𝐂𝐎𝐄𝐒〙✪══
 ║
-╠ *𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣* 
+╠ *Simih Bot* 
 ╠😎 *3.0*
-╠😎 𝐃𝐎𝐍𝐎: 𝓗𝓲𝓴𝓪𝓻𝔂  
+╠😎 𝐃𝐎𝐍𝐎: Nanammy
 ╠😎 *wa.me/+556692272931*
 ╠😎 𝐒𝐓𝐀𝐓𝐔𝐒: ON
 ║
@@ -220,17 +220,18 @@ const help = (prefix) => {
 ║🐊 *dbz*
 ║🐊 *mandememe*
 ║
-╠══✪〘 𝓗𝓲𝓴𝓪𝓻𝔂 𝓝𝓞 𝓒𝓞𝓜𝓐𝓝𝓓𝓞 〙✪══
+╠══✪〘 *SIMIH NO COMANDO* 〙✪══
 ║
-║ *NOME: 𝓗𝓲𝓴𝓪𝓻𝔂*
+║ *NOME: NANAMMY*
 ║ *WPP: wa.me/+556692272931*
 ║  
-║  *"CRINGE MORRE CEDO 🐊👑*
+║  *"A Vida Espera Mais De Você 🐊👑*
 ║  
 ║
 ║
-╚═〘 𝓗𝓲𝓴𝓪𝓻𝔂 𝓑𝓞𝓣 〙`
+╚═〘 Simih Bot 〙`
 }
 
 exports.help = help
+
 

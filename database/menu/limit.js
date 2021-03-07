@@ -4,7 +4,7 @@ const limit = (prefix, botName, ownerName) => {
 
 🎇 *𝐌𝐄𝐍𝐔*
   🐊 Prefix: 「  ${prefix}  」
-  🐊 Creator: 𝓗𝓲𝓴𝓪𝓻𝔂
+  🐊 Creator: Nanammy
   🐊 Version: 1.0
 🎇 *𝐒𝐎𝐁𝐑𝐄*
   │
